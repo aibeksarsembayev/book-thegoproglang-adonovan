@@ -25,3 +25,6 @@
 2022-09-14T15:05:27
 1.70s    4154 http://gopl.io
 
+0.86s   33248 http://alexa.com
+1.67s    3864 http://sun-pro.com
+Get "http://sunasdfasdfsadfsadfsadf.com": dial tcp: lookup sunasdfasdfsadfsadfsadf.com on 172.23.16.1:53: no such host
