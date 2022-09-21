@@ -31,3 +31,25 @@ func PopCount2(x uint64) int {
 	}
 	return int(output)
 }
+
+// exercise 2.4
+func PopCountShift(x uint64) int {
+	var output byte
+	for i := 0; i < 64; i++ {
+		if x&1 != 0 {
+			output++
+		}
+		x = x >> 1
+	}
+	return int(output)
+}
+
+// exercise 2.5
+func PopCountClearRight(x uint64) int {
+	var output byte
+	for x != 0 {
+		x = x & (x - 1)
+		output++
+	}
+	return int(output)
+}
